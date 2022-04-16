@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.2/moment.min.js"></script>
+  <title>Report</title>
+  <style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+  }
+
+  tr:nth-child(even) {
+    background-color: aliceblue;
+  }
+  </style>
+</head>
+<body>
+  <table>
+    <th>
+      <tr>
+        <th>Username</th>
+        <th>Progress in Percentage</th>
+        <th>Time Elapsed Since last commit</th>
+      </tr>
+    </th>
+    <tbody id="main"></tbody>
+  </table>
+</body>
+  <script src="index.js"></script>
+</html>
