@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.2/moment.min.js"></script>
-  <title>Report</title>
+  <title>JARVIS Report</title>
+  <script>
+    const totalTests = 105;
+  </script>
   <style>
   table {
-    font-family: arial, sans-serif;
+    font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
     border-collapse: collapse;
-    width: 40%;
+    font-size: 15px;
+    width: 50%;
   }
 
   th,td{
     text-align: center;
+    padding: 0.2em;
+    border-top: 1px solid #dee2e6;
   }
 
-  tr:nth-child(even) {
-    background-color: aliceblue;
+  tbody tr:nth-child(odd) {
+      background-color: #f2f2f2;
   }
   </style>
 </head>
 <body>
-  <table>
-    <th>
+  <div id="conatiner">
+    <table>
+    <thead>
       <tr>
         <th>Username</th>
-        <th>Progress in Percentage</th>
-        <th>Time Elapsed Since last commit</th>
+        <th>Progress in %</th>
+        <th>Minutes Since </th>
+        <th>Failures in last commit</th>
+        <th>Grade</th>
       </tr>
-    </th>
-    <tbody id="main"></tbody>
+  </thead>
+    <tbody id="main">
+    </tbody>
   </table>
+  </div> 
 </body>
   <script src="index.js"></script>
 </html>
